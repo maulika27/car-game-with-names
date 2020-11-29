@@ -7,25 +7,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-
-
-    <script>
-      //Your web app's Firebase configuration
-      
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    </script>
-
-    <script src="js/Player.js"></script>
+  <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
     <script src="js/Game.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+ 
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+ 
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+ 
+ <script>
+   // Your web app's Firebase configuration
+   var firebaseConfig = {
+     apiKey: "AIzaSyBu19a_0nmmDpFbiTWQJSDcBYPpGlBqzZI",
+     authDomain: "car-race-2-ce417.firebaseapp.com",
+     databaseURL: "https://car-race-2-ce417.firebaseio.com",
+     projectId: "car-race-2-ce417",
+     storageBucket: "car-race-2-ce417.appspot.com",
+     messagingSenderId: "7856201699",
+     appId: "1:7856201699:web:7b868f7c7a9133a633cad6"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+ </script>
+ 
+ 
   </head>
   <body>
     <script src="sketch.js"></script>
